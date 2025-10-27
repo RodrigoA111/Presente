@@ -3,39 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Imagem Cartão NFC</title>
+  <title>Álbum de Imagens</title>
   <style>
     html, body {
       height: 100%;
       margin: 0;
       background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .wrap {
-      height: 100vh;
+      width: 100%;
+      max-width: 600px;
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #555 #000;
     }
     img {
-      max-width: 100%;
-      max-height: 80vh;
+      width: 90%;
+      border-radius: 12px;
       object-fit: contain;
-    }
-    .msg {
-      color: #fff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 16px;
-      opacity: 0.9;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <!-- <div class="msg">Vou estar sempre aqui para ti <3</div> -->
-    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem do Cartão">
+     <!-- <div class="msg">Vou estar sempre aqui para ti <3</div> -->
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 1">
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 2">
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 3">
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 4">
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 5">
   </div>
 </body>
 </html>
