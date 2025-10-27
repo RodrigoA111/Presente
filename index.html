@@ -22,23 +22,24 @@
       padding: 20px;
     }
 
-    /* Moldura 3:4 */
+    /* Moldura com proporção 3:4 */
     .frame {
       position: relative;
       width: 90%;
       max-width: 600px;
-      aspect-ratio: 3 / 4; /* Mantém a proporção 3:4 */
+      aspect-ratio: 3 / 4; /* Proporção fixa */
+      border: 5px solid white; /* Moldura visível */
       border-radius: 12px;
+      box-sizing: border-box;
       overflow: hidden;
-      box-shadow: 0 0 15px rgba(255,255,255,0.3);
-      background: #111; /* Caso a imagem não preencha totalmente */
+      background: #000;
     }
 
     .frame img {
-      position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Preenche a moldura mantendo proporção */
+      object-fit: contain; /* mantém a proporção da imagem */
+      display: block;
     }
   </style>
 </head>
@@ -52,3 +53,4 @@
   </div>
 </body>
 </html>
+
