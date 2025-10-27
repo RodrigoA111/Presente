@@ -4,20 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Álbum de Imagens 3:4</title>
+  <title>Álbum de Imagens</title>
   <style>
-    :root {
-      --max-width: 500px; /* largura máxima das fotos */
-    }
-
     html, body {
       margin: 0;
       padding: 0;
       background: #000;
       height: 100%;
       overflow-y: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
     .wrap {
@@ -28,46 +22,25 @@
       padding: 20px;
     }
 
-    /* contêiner com proporção 3:4 (vertical) */
-    .foto {
-      position: relative;
+    img {
       width: 90%;
-      max-width: var(--max-width);
-      aspect-ratio: 3 / 4;
-      overflow: hidden;
+      max-width: 600px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.12);
-      background: #000;
-    }
-
-    /* imagem preenche todo o contêiner 3:4 */
-    .foto img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
       display: block;
-      -webkit-user-drag: none;
-    }
-
-    /* legenda opcional */
-    .caption {
-      color: #ddd;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="foto"><img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 1"></div>
-    <div class="foto"><img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 2"></div>
-    <div class="foto"><img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 3"></div>
-    <div class="foto"><img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 4"></div>
-    <div class="caption">Álbum — todas as fotos em 3:4</div>
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 1">
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 2">
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 3">
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 4">
+    <img src="https://i.imgur.com/KQ0v6mO.jpeg" alt="Imagem 5">
   </div>
 </body>
 </html>
+
 
